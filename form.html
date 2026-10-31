@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formm.css">
+</head>
+
+<body>
+    <h1>Formation en informatique</h1>
+    <ul>
+        <li>Développement Web</li>
+        <li>Réseaux informatiques</li>
+        <li>Bases de données</li>
+        <li>Algorithmique</li>
+    </ul>
+
+
+    <ol type="I">
+        <li>Inscription</li>
+        <li>Validation du dossier</li>
+        <li>Choix de la formation</li>
+        <li>Confirmation de l'inscription</li>
+    </ol>
+
+    <ul>
+        <li>Développement Web
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+
+        <li>Réseaux informatiques
+            <ul>
+                <li>Ethernet</li>
+                <li>TCP/IP</li>
+                <li>Routage</li>
+            </ul>
+        </li>
+        <li>Bases de données
+            <ul>
+                <li>MySQL</li>
+                <li>Oracle</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 class="titre-formulaire">Formulaire d'inscription</h2>
+    <form>
+        <div class="groupes">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <label>Nom: <input type="text" name="nom" placeholder="nom" required></label>
+            <label>Prénom: <input type="text" name="prenom" placeholder="prenom" required></label>
+            <label>Adresse email: <input type="email" name="email" placeholder="adresse@gmail.com" required></label>
+            <label>Numéro de téléphone: <input type="tel" name="tel" placeholder="06 00 00 00 00"></label>
+            <label>Mot de passe: <input type="password" name="pwd" required></label>
+            <label>date de naissance: <input type="date" name="date_naissance"></label>
+            <label>Age: <input type="number" name="age" min="18" max="60"></label>
+            <br>
+
+            <p class="sous-titre">Sexe: </p>
+                <div class="choix">
+                <input type="radio" name="fe" value="femme"> 
+                <label for="femme">Femme</label>
+                <input type="radio" name="fe" value="homme">
+                <label for="homme">Homme</label>
+                </div>
+            <br>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>Formation</legend>
+            <p class="sous-titre">Niveau d'étude:</p> 
+            <div class="choix-colonne">
+                <label for="1"><input type="radio" name="nv" value="1">1ère année</label>
+                <label for="2"></label><input type="radio" name="nv" value="2">2ème année</label>
+                <label for="3"></label><input type="radio" name="nv" value="3">3ème année</label>
+            </div>
+            <br>
+
+            <label for="sel">Fillière</label>
+            <select required name="sel" id="sel">
+                <option value="">-- Choisissez votre filière -- </option>
+                <option value="gi">Génie informatique</option>
+                <option value="res-tel">Réseaux et télécommunications</option>
+                <option value="ia">Intelligence artificielle</option>
+                <option value="cyber">Cybersécurité</option>
+            </select><br>
+
+
+            <label for="tet">Pourquoi souhaitez-vous suivre cette formation ?</label>
+            <textarea name="tet" placeholder="Pourquoi souhaitez-vous suivre cette formation ?" cols="60"
+                rows="5"></textarea><br><br>
+            <label>CV: <input type="file" name="cv"></label><br><br>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>Compétences</legend>
+            <p class="sous-titre">Technologies maîtrisées: </p> 
+            <div class="choix-colonne">
+                <label for="html"><input type="checkbox" name="html">HTML</label>
+                <label for="css"></label><input type="checkbox" name="css">CSS</label>
+                <label for="js"></label><input type="checkbox" name="js">JavaScript</label>
+                <label for="python"></label><input type="checkbox" name="python">Python</label>
+            </div>
+           
+            <br>
+            <p class="sous-titre">Domaines d'interet:</p> 
+            <div class="choix-colonne">
+                <label for="Développement Web"><input type="checkbox" name="Développement Web">Développement Web</label>
+                <label for="Réseaux"></label><input type="checkbox" name="Réseaux">Réseaux</label>
+                <label for="Cybersécurité"></label><input type="checkbox" name="Cybersécurité">Cybersécurité</label>
+                <label for="Intelligence Artificielle"></label><input type="checkbox" name="Intelligence Artificielle">Intelligence Artificielle</label>
+            </div>
+            
+            <br>
+        </fieldset>
+        </div>
+        <br><br>
+
+
+
+        <div class="boutons">
+        <button type="submit">S'inscrire</button>
+        <button type="reset">Réintialiser</button>
+        </div>
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>

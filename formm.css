@@ -1,0 +1,137 @@
+body{
+    font-family:"Amasis",serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 30px;
+}
+.titre-formulaire{
+    Color: #1f4e79;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+form{
+    max-width: 1200px;
+    background-color: white;
+    padding:25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #cccccc;
+    
+}
+.groupes{
+    display: flex;
+    gap: 20px;
+}
+
+fieldset{
+    flex: 1;
+    border: 1px solid #cccccc;
+    border-raduis: 8px ;
+    padding: 20px;
+    margin: 5px;
+}
+
+legend{
+    color: #1f4e79;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],input[type="email"],input[type="password"],input[type="date"],input[type="number"],input[type="tel"],input[type="file"], select, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding:10px;
+    border: 1px solid #bbbbbb;
+    border-raduis:5px;
+    margin-bottom: 10px;
+}
+
+input:focus,select:focus,textarea:focus{
+    outline: none;
+    border: 2px solid #1f4e79;
+    background-color: #f8fbff;
+}
+
+
+::placeholder{
+    color: #999999;
+}
+
+
+.sous-titre{
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.choix{
+    display: flex;
+    gap: 20px;
+}
+
+.choix label{
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.choix-colonne{
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+
+.boutons{
+    display: center;
+    margin-top: 25px;
+}
+
+button[type="submit"],button[type="reset"]{
+    border: none;
+    border-raduis: 6px;
+    padding: 12px 25px;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]{
+    background-color: #13d830;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button[type="reset"]{
+    background-color: #f30707;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+button[type="submit"]:hover{
+    background-color: #0b8f20;
+
+}
+
+button[type="reset"]:hover{
+    background-color: #b00000;
+}
+
+
+
+
+@media(max-width: 850px) {
+    .groupes{
+        flex-direction: column;
+    }
+}
